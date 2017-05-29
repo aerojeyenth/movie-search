@@ -1,0 +1,295 @@
+body{
+  padding: 50px 10px 10px;
+
+  //background: no-repeat;
+  ///* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053565+0,0167a6+70,007ec6+100 */
+  //background: #053565; /* Old browsers */
+  //background: -moz-linear-gradient(left,  #053565 0%, #0167a6 70%, #007ec6 100%); /* FF3.6-15 */
+  //background: -webkit-linear-gradient(left,  #053565 0%,#0167a6 70%,#007ec6 100%); /* Chrome10-25,Safari5.1-6 */
+  //background: linear-gradient(to right,  #053565 0%,#0167a6 70%,#007ec6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053565', endColorstr='#007ec6',GradientType=1 ); /* IE6-9 */
+
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover !important;
+
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.images img {
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.images {
+  padding-left: 20px;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+}
+
+
+.movie-new {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  padding-bottom: 30px;
+}
+
+.badge {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  font-size: 0.6em;
+}
+
+
+.movie-title {
+  padding-top: 0.5em;
+  font-size: 0.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+
+.movie-lead {
+  margin-top: -0.2em;
+  font-size: 0.7em;
+  color: #8a99a2;
+}
+
+
+
+input[type=search] {
+  background-color: rgba(2, 52, 91, 0.81);;
+  color:white;
+  border: none;
+  font-size: 1.3em;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBkPSJNNTUuMTQ2LDUxLjg4N0w0MS41ODgsMzcuNzg2YzMuNDg2LTQuMTQ0LDUuMzk2LTkuMzU4LDUuMzk2LTE0Ljc4NmMwLTEyLjY4Mi0xMC4zMTgtMjMtMjMtMjNzLTIzLDEwLjMxOC0yMywyMyAgczEwLjMxOCwyMywyMywyM2M0Ljc2MSwwLDkuMjk4LTEuNDM2LDEzLjE3Ny00LjE2MmwxMy42NjEsMTQuMjA4YzAuNTcxLDAuNTkzLDEuMzM5LDAuOTIsMi4xNjIsMC45MiAgYzAuNzc5LDAsMS41MTgtMC4yOTcsMi4wNzktMC44MzdDNTYuMjU1LDU0Ljk4Miw1Ni4yOTMsNTMuMDgsNTUuMTQ2LDUxLjg4N3ogTTIzLjk4NCw2YzkuMzc0LDAsMTcsNy42MjYsMTcsMTdzLTcuNjI2LDE3LTE3LDE3ICBzLTE3LTcuNjI2LTE3LTE3UzE0LjYxLDYsMjMuOTg0LDZ6IiBmaWxsPSIjRkZGRkZGIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+  background-position: 5px 1.2rem;
+  background-repeat: no-repeat;
+  background-size: 40px 20px;
+  padding: 12px 20px 12px 45px;
+}
+
+input[type=search]:focus {
+  background-color: rgba(2, 52, 91, 0.81);;
+  border:none;
+  color: #FFFFFF;
+}
+
+input::placeholder {
+  color: #0168a8;
+
+}
+
+input {
+  height: 3.5rem !important;
+}
+
+
+.search-list-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.tt-dropdown-menu{
+  width: 100%;
+}
+
+input.typeahead.tt-query{
+  width: 300px !important;
+}
+
+.tt-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 100;
+  background: #0167a6;
+  width: 100%;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.search-results img {
+  padding: 5px;
+}
+
+.movie-info {
+  padding: 10px 10px 10px 0;
+  font-size: 1.1rem;
+}
+
+.movie-info span {
+  font-size: 1rem;
+}
+
+.tt-menu {
+  padding: 0;
+  border-radius: 5px;
+}
+
+.search-movie:hover {
+  background: #013c67;
+}
+
+.tt-cursor {
+  background: #013c67;
+}
+
+.tn {
+  border-radius: 8px !important;
+}
+
+
+.empty-message {
+  padding: 50px;
+}
+
+.movie-images{
+  position: relative;
+}
+
+.movie-images:after {
+  content: ' ';
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  height: 100%;
+  width: 2em;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(0,126,198,0.4) 100%);
+  z-index: 1;
+}
+
+
+
+/* Clear Search */
+
+.search-wrapper {
+  position: relative;
+}
+
+.close-icon {
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+  content: '\00d7';
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  top: -50px;
+  bottom: 0;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+footer {
+  margin-top: 50px;
+  padding: 10px;
+}
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .row.movie-images {
+    max-width: none;
+    margin-left: -20px;
+    width: calc(100vw + 10px);
+
+  }
+
+  .scroll-behavior {
+    overflow-x: auto;
+  }
+
+  .movie-title {
+    font-size: 0.7em;
+  }
+
+
+  .movie-lead {
+    font-size: 0.7em;
+  }
+}
+
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.7em;
+  color: #cacaca;
+}
+
+.tt-container {
+  overflow: scroll;
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .movie-title {
+    font-size: 1em;
+  }
+
+
+  .movie-lead {
+    font-size: 1em;
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .row.movie-images {
+    max-width: none;
+    margin-left: -20px;
+    width: calc(100vw + 10px);
+  }
+
+  .scroll-behavior {
+    overflow-x: auto;
+  }
+
+}
+
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .movie-images:after {
+    content: none;
+  }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+.more a {
+  color: #37b3ff;
+}
+

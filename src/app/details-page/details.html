@@ -1,0 +1,63 @@
+<div class="row expanded align-center" id="details-page">
+
+  <!--Back button-->
+  <div id="back">
+    <button ui-sref="home">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyLjYzNSAzMi42MzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyLjYzNSAzMi42MzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik0zMi4xMzUsMTYuODE3SDAuNWMtMC4yNzYsMC0wLjUtMC4yMjQtMC41LTAuNXMwLjIyNC0wLjUsMC41LTAuNWgzMS42MzVjMC4yNzYsMCwwLjUsMC4yMjQsMC41LDAuNSAgIFMzMi40MTEsMTYuODE3LDMyLjEzNSwxNi44MTd6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMTMuMDM3LDI5LjM1M2MtMC4xMjgsMC0wLjI1Ni0wLjA0OS0wLjM1NC0wLjE0NkwwLjE0NiwxNi42NjlDMC4wNTMsMTYuNTc1LDAsMTYuNDQ4LDAsMTYuMzE1czAuMDUzLTAuMjYsMC4xNDYtMC4zNTQgICBMMTIuNjg0LDMuNDI5YzAuMTk1LTAuMTk1LDAuNTEyLTAuMTk1LDAuNzA3LDBzMC4xOTUsMC41MTIsMCwwLjcwN0wxLjIwNywxNi4zMTVsMTIuMTg0LDEyLjE4NGMwLjE5NSwwLjE5NSwwLjE5NSwwLjUxMiwwLDAuNzA3ICAgQzEzLjI5MywyOS4zMDQsMTMuMTY1LDI5LjM1MywxMy4wMzcsMjkuMzUzeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+    </button>
+  </div>
+  <!--/Back button-->
+
+  <!-- Movie Card  -->
+  <div class="column small-11 large-8 movie-card">
+
+    <div class="row">
+      <!--Poster-->
+      <div class="column small-12 medium-4 text-center">
+        <div class="poster-float">
+          <img ng-src="https://image.tmdb.org/t/p/w300{{vm.movie.poster_path}}">
+          <span class="badge" ng-if="vm.movie.vote_average > 0" ng-class="{alert: vm.movie.vote_average <= 5, warning: (vm.movie.vote_average > 5  && vm.movie.vote_average < 7) , success: vm.movie.vote_average > 7}">{{vm.movie.vote_average}}</span>
+        </div>
+      </div>
+      <!--/ Poster-->
+
+      <!--Movie Info-->
+      <div class="column">
+
+        <div class="row">
+          <div class="column">
+            <h2 class="title">{{vm.movie.title}}</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <h5 class="tag-line">{{vm.movie.tagline}}</h5>
+          </div>
+        </div>
+
+        <div class="row details">
+          <div class="column small-6">
+            <b>Release:</b> {{vm.movie.release_date}}
+          </div>
+          <div class="column small-6">
+            <b>Running Time:</b> 160 min
+          </div>
+        </div>
+
+        <div class="row storyline">
+          <div class="column">
+            <h2>Storyline</h2>
+            <p>{{vm.movie.overview}}</p>
+          </div>
+        </div>
+
+      </div>
+      <!--/Movie Info-->
+
+    </div>
+
+  </div>
+  <!-- / Movie Card  -->
+
+</div>
