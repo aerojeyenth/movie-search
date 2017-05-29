@@ -19,6 +19,9 @@
             return $http.get('https://api.themoviedb.org/3/movie/'+ $stateParams.id +'?api_key=6101bba1eadfefbac6a1e1549e861665')
               .then (function (res) {
                 return res.data;
+              }, function (err) {
+                console.log(err);
+                console.log("can not load the resource!");
               });
           }
         }

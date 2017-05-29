@@ -46,20 +46,13 @@
       console.log(vm.searchResults);
     });
 
-
-
     function viewDetails(id) {
       $state.go('details', {id: id});
     }
 
-
-
     genres.forEach(function(genre){
       vm.genreIdKeys[genre.id] = genre.name;
     });
-
-
-
 
 
     // angular.element('input1').typeahead({
