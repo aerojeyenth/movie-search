@@ -12,9 +12,9 @@
 
     <span class="search-list-container">
     <input type="search" class="search-box" id="search-bar" required placeholder="Search Your Favourite Movie" ng-model="vm.searchValue">
-      
-    <div class="tt-menu">
-      <div class="tt-container">
+
+    <div class="search-menu">
+      <div class="search-container">
         <div class="row expanded search-movie" ng-repeat="movie in vm.searchResults" ng-click="vm.viewDetails(movie.id)">
           <div class="columns small-4 medium-2 search-results">
             <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="tn">
