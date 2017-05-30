@@ -1,7 +1,7 @@
 <!--Header-->
 <div class="row header align-center">
   <div class="column small-6 medium-3">
-    <img src="https://www.themoviedb.org/assets/static_cache/27b65cb40d26f78354a4ac5abf87b2be/images/v4/logos/powered-by-rectangle-green.svg" alt="" />
+    <img src="https://www.themoviedb.org/assets/static_cache/27b65cb40d26f78354a4ac5abf87b2be/images/v4/logos/powered-by-rectangle-green.svg" alt="Powered by TMDB logo" />
   </div>
 </div>
 <!--/Header-->
@@ -17,7 +17,7 @@
       <div class="search-container">
         <div class="row expanded search-movie" ng-repeat="movie in vm.searchResults" ng-click="vm.viewDetails(movie.id)">
           <div class="columns small-4 medium-2 search-results">
-            <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="tn">
+            <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="tn" alt="{{movie.original_title}}">
           </div>
           <div class="columns text-left movie-info">
             {{movie.original_title}} <br>
@@ -48,7 +48,7 @@
     <div class="images scroll-behavior">
 
       <div class="movie-new small-4 medium-3 large-2" ng-repeat="movie in vm.trendingMovies" ng-hide="!movie.poster_path" ng-click="vm.viewDetails(movie.id)">
-        <img ng-src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}"/>
+        <img ng-src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="{{movie.title}}"/>
         <span class="badge" ng-class="{alert: movie.vote_average <= 5, warning: (movie.vote_average > 5  && movie.vote_average < 7) , success: movie.vote_average > 7}">{{movie.vote_average}}</span>
         <div class="movie-title">{{movie.title}}</div>
         <div class="movie-lead">{{vm.genreIdKeys[movie.genre_ids[0]]}}, {{movie.release_date.substring(0, 4)}}</div>
@@ -74,7 +74,7 @@
     <div class="images scroll-behavior">
 
       <div class="movie-new small-3" ng-repeat="movie in vm.upcomingMovies" ng-hide="!movie.poster_path || movie.title === 'Jumper 2'" ng-click="vm.viewDetails(movie.id)">
-        <img ng-src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}"/>
+        <img ng-src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="movie.title"/>
         <div class="movie-title">{{movie.title}}</div>
         <div class="movie-lead">{{vm.genreIdKeys[movie.genre_ids[0]]}}, {{movie.release_date.substring(0, 4)}}</div>
       </div>

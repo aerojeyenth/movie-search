@@ -4,11 +4,9 @@
   angular
     .module('movieApp', [
       'ngAnimate',
-      'ngTouch',
       'ngSanitize',
       'ngAria',
       'ui.router',
-      'app.pages.details',
-      'toastr']);
+      'app.pages.details']);
 
 })();

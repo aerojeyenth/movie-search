@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="movieApp">
+<html ng-app="movieApp" lang="en">
   <head>
     <meta charset="utf-8">
     <title>Movie Search App - Powered by TMDB</title>
@@ -56,7 +56,7 @@
     <!-- endbuild -->
 
     <script>
-      if (!'serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
