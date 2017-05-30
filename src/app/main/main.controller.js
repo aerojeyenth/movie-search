@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($http, $state, Rx, trendingMovies, upcomingMovies) {
+  function MainController($http, $state, Rx, trendingMovies, upcomingMovies, $) {
     var vm = this;
 
     
@@ -56,6 +56,15 @@
       vm.genreIdKeys[genre.id] = genre.name;
     });
 
+
+    $('#search-bar').on('focus', function() {
+      var that = this;
+      // Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate({
+        scrollTop: document.body.scrollTop + that.getBoundingClientRect().top - 10
+      }, 300);
+
+    });
 
     // angular.element('input1').typeahead({
     //   hint: true,
