@@ -13,6 +13,7 @@
 
     vm.trendingMovies = trendingMovies;
     vm.upcomingMovies = upcomingMovies;
+    vm.resetSearchBar = resetSearchBar;
 
 
     document.body.style.backgroundImage = null;
@@ -52,6 +53,12 @@
 
     function viewDetails(id) {
       $state.go('details', {id: id});
+    }
+
+    function resetSearchBar() {
+      input.value = '';
+      input.dispatchEvent(new Event('input'));
+      vm.searchResults = null;
     }
 
     genres.forEach(function(genre){
