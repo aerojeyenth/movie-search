@@ -9,6 +9,8 @@
   function MainController($http, $state, Rx, trendingMovies, upcomingMovies) {
     var vm = this;
 
+    
+
     vm.viewDetails = viewDetails;
 
     vm.trendingMovies = trendingMovies;

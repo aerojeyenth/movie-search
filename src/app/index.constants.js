@@ -9,6 +9,7 @@
     .constant('Handlebars', Handlebars)
     .constant('Rx', Rx)
     .constant('$', $)
+    .constant('NProgress', NProgress)
     .constant('moment', moment);
 
 })();
