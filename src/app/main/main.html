@@ -73,7 +73,7 @@
 
     <div class="images scroll-behavior">
 
-      <div class="movie-new small-3" ng-repeat="movie in vm.upcomingMovies" ng-hide="!movie.poster_path" ng-click="vm.viewDetails(movie.id)">
+      <div class="movie-new small-3" ng-repeat="movie in vm.upcomingMovies" ng-hide="!movie.poster_path || movie.title === 'Jumper 2'" ng-click="vm.viewDetails(movie.id)">
         <img ng-src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}"/>
         <div class="movie-title">{{movie.title}}</div>
         <div class="movie-lead">{{vm.genreIdKeys[movie.genre_ids[0]]}}, {{movie.release_date.substring(0, 4)}}</div>
