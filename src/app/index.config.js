@@ -13,7 +13,6 @@
     //Enable HTML5 Url
     $locationProvider.html5Mode(true);
 
-
     //Disable Spinner in the top loader
     NProgress.configure({ showSpinner: false });
 
