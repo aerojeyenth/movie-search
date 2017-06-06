@@ -5,6 +5,11 @@ Movie Search is a responsive [AngularJS](https://angularjs.org/) app that utilis
 ## Demo
 [Movie Search App - Live DEMO](https://movie-app-d993e.firebaseapp.com)
 
+## Screenshot
+
+![](https://github.com/aerojeyenth/movie-search/blob/master/screenshots/webView.png)
+![](https://github.com/aerojeyenth/movie-search/blob/master/screenshots/mobileView.png)
+
 ## Features
 * Uses Gulp Angular Generator for scaffolding
 * Uses reactive programming technique(using RxJS) for search suggestions
