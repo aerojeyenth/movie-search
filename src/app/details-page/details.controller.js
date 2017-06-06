@@ -6,7 +6,7 @@
     .controller('DetailsController', DetailsController);
 
   /** @ngInject */
-  function DetailsController(movie, $anchorScroll) {
+  function DetailsController(movie, $anchorScroll, document) {
     var vm = this;
 
     vm.movie = movie;

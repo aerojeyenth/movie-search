@@ -6,7 +6,7 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider) {
+  function routerConfig($stateProvider, $log) {
 
     $stateProvider
       .state('details', {
@@ -20,8 +20,8 @@
               .then (function (res) {
                 return res.data;
               }, function (err) {
-                console.log(err);
-                console.log("can not load the resource!");
+                $log.error(err);
+                $log.error("can not load the resource!");
               });
           }
         }

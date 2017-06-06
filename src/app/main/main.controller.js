@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($http, $state, Rx, trendingMovies, upcomingMovies, $) {
+  function MainController($http, $state, Rx, trendingMovies, upcomingMovies, $, document, NProgress) {
     var vm = this;
 
     vm.viewDetails = viewDetails;
@@ -48,7 +48,6 @@
     searcher.subscribe(function (res) {
       NProgress.done();
       vm.searchResults = res.data.results;
-      console.log(vm.searchResults);
     });
 
     function viewDetails(id) {

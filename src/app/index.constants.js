@@ -1,4 +1,4 @@
-/* global $:false, NProgress:false, Rx:false */
+/* global $:false, document:false NProgress:false, Rx:false*/
 (function() {
   'use strict';
 
@@ -6,6 +6,7 @@
     .module('movieApp')
     .constant('Rx', Rx)
     .constant('$', $)
+    .constant('document', document)
     .constant('NProgress', NProgress);
 
 })();

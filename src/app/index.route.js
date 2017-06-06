@@ -26,12 +26,12 @@
 
             var httpRequest = $http.get('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=6101bba1eadfefbac6a1e1549e861665')
               .then(function (res) {
-                localStorage.setItem('trendingMovies', JSON.stringify(res.data.results));
+                localStorage.setItem('trendingMovies', angular.toJson(res.data.results));
                 localStorage.setItem('trendingMoviesUpdateTime', (new Date).getTime());
                 return res.data.results;
               });
 
-            return storedValue ? JSON.parse(storedValue) : httpRequest;
+            return storedValue ? angular.fromJson(storedValue) : httpRequest;
 
           },
           upcomingMovies: function ($http) {
@@ -49,12 +49,12 @@
 
             var httpRequest = $http.get('https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=' + queryDate +'&api_key=6101bba1eadfefbac6a1e1549e861665')
               .then(function (res) {
-                localStorage.setItem('upcomingMovies', JSON.stringify(res.data.results));
+                localStorage.setItem('upcomingMovies', angular.toJson(res.data.results));
                 localStorage.setItem('upcomingMoviesUpdateTime', (new Date).getTime());
                 return res.data.results;
               });
 
-            return storedValue ? JSON.parse(storedValue) : httpRequest;
+            return storedValue ? angular.fromJson(storedValue) : httpRequest;
           }
         }
       });
