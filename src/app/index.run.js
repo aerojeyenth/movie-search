@@ -6,9 +6,7 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log, $rootScope, NProgress) {
-
-    $log.debug('runBlock end');
+  function runBlock($rootScope, NProgress) {
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
       if (toState.resolve) {
